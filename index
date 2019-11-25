@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 
 <html><head>
-<title>Access Denied</title>
+<title>Iframe</title>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript">
 
 $(document ).ready(function() {
-    
+    var iFrameDOM = $("iframe#frameID").contents();
+
+                alert(iFrameDOM.find(".container").length);
 
 
 });
@@ -20,6 +22,9 @@ $(document ).ready(function() {
 <body>
 <div id="wt-logo" style="width:1200px;height:900px">
 <h1>anand</h1>
+ <iframe id="frameID" width="1000" height="600" src="https://timesofindia.indiatimes.com/" >
+
+                </iframe>
 
 
 </div>
